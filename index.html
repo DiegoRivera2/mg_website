@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Consultoria Integral MG</title>
+</head>
+<style>
+
+    html {
+      background-color: #1a1646;
+    }
+
+    @keyframes bttn-bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-6px); }
+    }
+
+    .animate-bttn {
+        animation: bttn-bounce 2s ease-in-out infinite;
+    }
+
+    @media (max-width: 826px){
+      .responsive-flex{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 620px){
+      .responsive-text{
+        font-size: 50px;
+      }
+
+      .responsive-solgan{
+        font-size: 10px;
+      }
+
+
+    }
+
+</style>
+<body class="m-0">
+    <!--Home Page-->
+    <div class="h-screen flex">
+        <div class="finisher-header flex flex-col justify-center w-full items-center p-[20px] box-border">
+            <h1 class="text-center text-white text-[6rem] font-sans font-bold responsive-text">Consultoría Integral MG</h1>
+            <p class="ml-20 mr-20 text-center text-white text-[1rem] font-sans font-medium">Tu socio en contabilidad.<br> 
+                Simplificamos tu contabilidad y facturación electrónica en El Salvador.</p>
+        <!--Bttns Container-->
+        <div class="flex responsive-flex items-center mt-20">
+            <a class="ml-10 mr-10 text-black text-center font-bold p-[20px] text-[20px] pl-[40px] pr-[40px] bg-[#CBDCEB] rounded-[10px] transition-shadow hover:shadow-[6px_6px_0px_#2b7fff] transition-transform transform hover:scale-105 cursor-pointer">Servicios Empresariales</a>
+            <a class="ml-10 mr-10 text-black font-bold text-center p-[20px] text-[20px] pl-[40px] pr-[40px] bg-[#CBDCEB] rounded-[10px] transition-shadow hover:shadow-[6px_6px_0px_#2b7fff] transition-transform transform hover:scale-105 cursor-pointer">Facturación electrónica</a>
+            <a class="ml-10 mr-10 text-white font-bold p-[20px] text-[20px] pl-[40px] pr-[40px] bg-blue-500 rounded-[10px] transition-shadow hover:shadow-[6px_6px_0px_#93c5fd] transition-transform transform hover:scale-105 animate-bttn cursor-pointer">Contáctanos</a>
+            
+        </div>
+    </div>
+<script src="finisher-header.es5.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    new FinisherHeader({
+      "count": 5,
+      "size": {
+        "min": 900,
+        "max": 1500,
+        "pulse": 0
+      },
+      "speed": {
+        "x": {
+          "min": 0,
+          "max": 0.3
+        },
+        "y": {
+          "min": 0,
+          "max": 0
+        }
+      },
+      "colors": {
+        "background": "#1a1646",
+        "particles": [
+          "#117cef"
+        ]
+      },
+      "blending": "lighten",
+      "opacity": {
+        "center": 0.15,
+        "edge": 0.05
+      },
+      "skew": 0,
+      "shapes": [
+        "s"
+      ]
+    });
+    </script>
+</body>
+</html>
